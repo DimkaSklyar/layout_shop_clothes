@@ -33,6 +33,41 @@ body
 		left: 0
 	&:after
 		right: 0
+.with-sub
+	position: relative
+	+media-breakpoint-down(sm)
+		margin: 0
+	&:hover .sub-menu
+		opacity: 1
+		visibility: visible
+		
+.sub-menu
+	position: absolute
+	background-color: $accent
+	padding: 15px 50px 15px 15px
+	box-shadow: -1px 16px 14px 6px rgba(255, 255, 255, 0.55)
+	border-bottom-right-radius: 10px
+	border-bottom-left-radius: 10px
+	margin-top: -1px
+	visibility: hidden
+	opacity: 0
+	transition: .3s
+	+media-breakpoint-down(sm)
+		position: static
+		opacity: 1
+		visibility: visible
+		background-color: #fff
+		box-shadow: none
+		padding: 0
+		margin-top: -30px
+    margin-bottom: -10px
+	li
+		padding: 0
+		&:not(:last-child)
+			+media-breakpoint-down(sm)
+				margin: 20px 0
+		a
+			padding: 0
 
 ul
 	margin: 0
@@ -120,6 +155,7 @@ nav
 		margin: 0 20px
 		+media-breakpoint-down(sm)
 			margin: 15px
+			text-align: center
 		a
 			display: inline-block
 			padding: 37px 0
@@ -189,11 +225,16 @@ nav
 				font-size: 80px
 				text-transform: uppercase
 				color: #fff
+				+media-breakpoint-down(sm)
+					font-size: 45px
 			p
 				text-transform: uppercase
 				letter-spacing: 15px
 				color: #000
 				font-size: 32px
+				+media-breakpoint-down(sm)
+					font-size: 16px
+					letter-spacing: normal
 	&__section
 		position: relative
 		height: 285px
