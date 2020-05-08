@@ -39,6 +39,8 @@ ul
 
 .fix-padding-left
 	padding-left: 0
+	+media-breakpoint-down(lg)
+		padding-left: 7.5px
 
 header
 	background-color: $accent
@@ -119,16 +121,20 @@ header
 				text-transform: uppercase
 				letter-spacing: 15px
 				color: #000
-				font-size: 38px
+				font-size: 32px
 	&__section
 		position: relative
 		height: 285px
 		overflow: hidden
+		+media-breakpoint-down(lg)
+			height: 210px
 		&:hover .banner__section__img:before
 			opacity: .3
 		&:hover img
 			transform: scale(1.1)
 		&-1
+			+media-breakpoint-down(lg)
+				margin-top: 15px
 			&:before
 				width: 2px
 				margin-top: 0px
@@ -614,6 +620,14 @@ header
 		overflow: hidden
 		img
 			width: 100%
+	&__content-1,
+	&__content-2,
+	&__content-3,
+	&__content-4,
+	&__content-5
+		+media-breakpoint-down(lg)
+			width: 40px !important
+			height: 40px !important
 	&__content-1
 		position: absolute
 		width: 50px
@@ -621,8 +635,8 @@ header
 		background-color: red
 		border-radius: 50%
 		cursor: pointer
-		top: 150px
-		right: 200px
+		top: 15%
+		right: 31%
 		&:after
 			content: "+"
 			position: absolute
@@ -657,8 +671,8 @@ header
 		background-color: red
 		border-radius: 50%
 		cursor: pointer
-		bottom: 150px
-		right: 100px
+		bottom: 20%
+		right: 15%
 		&:after
 			content: "+"
 			position: absolute
@@ -693,8 +707,8 @@ header
 		background-color: red
 		border-radius: 50%
 		cursor: pointer
-		bottom: 350px
-		right: 300px
+		bottom: 35%
+		right: 30%
 		&:after
 			content: "+"
 			position: absolute
@@ -729,8 +743,8 @@ header
 		background-color: red
 		border-radius: 50%
 		cursor: pointer
-		top: 250px
-		right: 200px
+		top: 25%
+		right: 30%
 		&:after
 			content: "+"
 			position: absolute
@@ -765,8 +779,8 @@ header
 		background-color: red
 		border-radius: 50%
 		cursor: pointer
-		bottom: 50px
-		right: 200px
+		bottom: 5%
+		right: 35%
 		&:after
 			content: "+"
 			position: absolute

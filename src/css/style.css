@@ -7988,6 +7988,12 @@ ul {
   padding-left: 0;
 }
 
+@media (max-width: 1199px) {
+  .fix-padding-left {
+    padding-left: 7.5px;
+  }
+}
+
 header {
   background-color: #262626;
   position: sticky;
@@ -8097,7 +8103,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 15px;
   color: #000;
-  font-size: 38px;
+  font-size: 32px;
 }
 
 .banner__section {
@@ -8106,12 +8112,24 @@ header {
   overflow: hidden;
 }
 
+@media (max-width: 1199px) {
+  .banner__section {
+    height: 210px;
+  }
+}
+
 .banner__section:hover .banner__section__img:before {
   opacity: .3;
 }
 
 .banner__section:hover img {
   transform: scale(1.1);
+}
+
+@media (max-width: 1199px) {
+  .banner__section-1 {
+    margin-top: 15px;
+  }
 }
 
 .banner__section-1:before {
@@ -8815,6 +8833,13 @@ header {
   width: 100%;
 }
 
+@media (max-width: 1199px) {
+  .lookbook__content-1, .lookbook__content-2, .lookbook__content-3, .lookbook__content-4, .lookbook__content-5 {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
 .lookbook__content-1 {
   position: absolute;
   width: 50px;
@@ -8822,8 +8847,8 @@ header {
   background-color: red;
   border-radius: 50%;
   cursor: pointer;
-  top: 150px;
-  right: 200px;
+  top: 15%;
+  right: 31%;
 }
 
 .lookbook__content-1:after {
@@ -8866,8 +8891,8 @@ header {
   background-color: red;
   border-radius: 50%;
   cursor: pointer;
-  bottom: 150px;
-  right: 100px;
+  bottom: 20%;
+  right: 15%;
 }
 
 .lookbook__content-2:after {
@@ -8910,8 +8935,8 @@ header {
   background-color: red;
   border-radius: 50%;
   cursor: pointer;
-  bottom: 350px;
-  right: 300px;
+  bottom: 35%;
+  right: 30%;
 }
 
 .lookbook__content-3:after {
@@ -8954,8 +8979,8 @@ header {
   background-color: red;
   border-radius: 50%;
   cursor: pointer;
-  top: 250px;
-  right: 200px;
+  top: 25%;
+  right: 30%;
 }
 
 .lookbook__content-4:after {
@@ -8998,8 +9023,8 @@ header {
   background-color: red;
   border-radius: 50%;
   cursor: pointer;
-  bottom: 50px;
-  right: 200px;
+  bottom: 5%;
+  right: 35%;
 }
 
 .lookbook__content-5:after {
