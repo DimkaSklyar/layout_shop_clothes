@@ -1,5 +1,17 @@
 $(document).ready(function () {
 
+$(".menu_btn").click(function (e) { 
+  e.preventDefault();
+  $("nav").addClass("open");
+  $(".close-mobile-menu").addClass("open")
+});
+
+$(".close-mobile-menu").click(function (e) { 
+  e.preventDefault();
+  $("nav").removeClass("open");
+  $(this).removeClass("open");
+});
+
   $('.smart-basket__wrapper').smbasket({
     productElement: 'product__item',
     buttonAddToBasket: 'btn_order',
@@ -63,8 +75,8 @@ $(document).ready(function () {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {

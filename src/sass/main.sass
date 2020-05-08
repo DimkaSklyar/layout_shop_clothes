@@ -52,23 +52,91 @@ header
 	left: 0
 	z-index: 9999
 	box-shadow: 0 0 3px 2px rgba(0,0,0,0.1)
+nav
+	+media-breakpoint-down(sm)
+		position: fixed
+		left: -100%
+		top: 0
+		bottom: 0
+		right: 100%
+		background-color: #fff
+		z-index: 9999999
+		transition: .4s
+	&.open
+		left: 0
+		right: 30%
+.mobile-menu
+	height: 100px
+	text-align: center
+	margin: auto 0
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #fff
+	text-transform: uppercase
+	cursor: pointer
+	i
+		margin-right: 5px
+	.menu_btn
+		border: none
+		background: none
+		outline: 0 none
+		color: #fff
+		text-transform: uppercase
+		&:focus
+			outline: 0 none
 
+.close-mobile-menu
+	position: fixed
+	top: 0
+	bottom: 0
+	right: -100%
+	left: 100%
+	background-color: rgba(#000,.7)
+	z-index: 999999
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	transition: .4s
+	&.open
+		left: 70%
+		right: 0
+	.btn_close_menu_mobile
+		border: none
+		outline: 0 none
+		background: none
+		color: #fff
+		font-size: 60px
+		cursor: pointer
 .menu
 	display: flex
 	justify-content: center
 	align-items: center
+	+media-breakpoint-down(sm)
+		flex-direction: column
+		justify-content: center
+		height: 100%
 	&__item
 		margin: 0 20px
+		+media-breakpoint-down(sm)
+			margin: 15px
 		a
 			display: inline-block
 			padding: 37px 0
 			font-weight: bold
 			color: #888
 			font-size: 18px
+			+media-breakpoint-down(sm)
+				padding: 0
+				font-size: 24px
 			&:hover
 				color: #fff
+				+media-breakpoint-down(sm)
+					color: #e97e3d
 			&.active
 				color: #fff
+				+media-breakpoint-down(sm)
+					color: #e97e3d
 
 .logo__wrapper
 	position: fixed
@@ -260,9 +328,13 @@ header
 		width: 10%
 		+media-breakpoint-down(lg)
 			width: 20%
+		+media-breakpoint-down(sm)
+			width: 30%
 	&__img
 		opacity: .5
 		transition: .3s
+		display: flex
+		justify-content: center
 		&:hover
 			opacity: 1
 
@@ -956,6 +1028,8 @@ header
 	h2
 		text-transform: uppercase
 		color: #fff
+		+media-breakpoint-down(sm)
+			margin-top: 20px
 	.menu-bottom
 		li
 			margin-bottom: 15px
@@ -969,11 +1043,15 @@ header
 	background-color: #000
 	position: relative
 	z-index: 1
+	+media-breakpoint-down(sm)
+		text-align: center
 	p
 		margin-bottom: 0
 		padding: 15px 0
 		color: #ccc
 		font-size: 14px
+		+media-breakpoint-down(sm)
+			text-align: center
 /*==========  user style  ==========*/
 
 +keyframes(animation-1)
