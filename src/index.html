@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+	<div class="smart-basket__wrapper"></div>
 	<header>
 		<div class="container">
 			<div class="row">
@@ -36,7 +36,6 @@
 		</div>
 		<div class="cart__wrapper">
 			<div class="cart">
-				<i class="fa fa-shopping-bag" aria-hidden="true"></i>
 			</div>
 		</div>
 	</header>
@@ -49,7 +48,7 @@
 						<div class="col-8">
 							<div class="banner-slider">
 								<div class="banner-slider__item">
-									<a href="catlog.html">
+									<a href="#featured_new">
 										<div class="banner-slider__img">
 											<img src="img/slider/slider-1.webp" alt="">
 										</div>
@@ -96,7 +95,7 @@
 							<div class="row banner__section__row no-gutters">
 								<div class="col-12">
 									<div class="banner__section banner__section-1">
-										<a href="#">
+										<a href="woman.html">
 											<div class="banner__section__img">
 												<img src="img/banner-section-1.webp" alt="">
 											</div>
@@ -117,7 +116,7 @@
 								</div>
 								<div class="col-12">
 									<div class="banner__section banner__section-2">
-										<a href="#">
+										<a href="man.html">
 											<div class="banner__section__img">
 												<img src="img/banner-section-2.jpg" alt="">
 											</div>
@@ -140,7 +139,7 @@
 						</div>
 						<div class="col-4">
 							<div class="banner__section banner__section-3">
-								<a href="#">
+								<a href="sale.html">
 									<div class="banner__section__text">
 										<p>Скидки до 50%</p>
 										<h2 class="banner__section__title">
@@ -161,7 +160,7 @@
 						</div>
 						<div class="col-4 fix-padding-left">
 							<div class="banner__section banner__section-4">
-								<a href="#">
+								<a href="acsessuary.html">
 									<div class="banner__section__img">
 										<img src="img/banner-section-4.jpg" alt="">
 									</div>
@@ -185,7 +184,7 @@
 						</div>
 						<div class="col-4 fix-padding-left">
 							<div class="banner__section banner__section-5">
-								<a href="#">
+								<a href="galstuki.html">
 									<div class="banner__section__img">
 										<img src="img/banner-section-5.jpg" alt="">
 									</div>
@@ -268,6 +267,9 @@
 
 			<section class="page-section trand">
 				<div class="container-fluid">
+					<div class="section__title">
+						<h2>В тренде</h2>
+					</div>
 					<div class="slider-product">
 						<div class="slider-product__item">
 							<article class="product__item">
@@ -276,16 +278,591 @@
 										<img src="img/product/product-1.jfif" alt="">
 									</div>
 									<div class="product__desc">
-										<a href="#" class="btn btn_quick">Посмотреть</a>
-										<div class="product__description d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-											Magnam
-											fuga eos sint molestias qui labore, alias facilis eum nesciunt sapiente architecto quaerat iste
-											sunt fugit a aliquam cumque ipsam rerum?</div>
+										<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+										<div class="product__description d-none">Юбка длиной до икр из воздушной ткани с набивным рисунком.
+											Высокая талия со сборкой, а также потайная молния с одной стороны. Присборенная резинка на бедрах
+											для дополнительной ширины. Без подкладки.</div>
+										<div class="product__quantity d-none"></div>
 										<div class="product__title-price__wrap">
 											<h1 class="product__title"> <a href="#">Юбка с рисунком</a></h1>
 											<span class="product__price">2299 <span>руб.</span></span>
 										</div>
-										<a href="#" class="btn btn_order">В корзину</a>
+										<button class="btn btn_order" data-sb-id-or-vendor-code="1" data-sb-product-name="Юбка с рисунком"
+											data-sb-product-price="2299" data-sb-product-quantity="1"
+											data-sb-product-img="img/product/product-1.jfif">В корзину</button>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="slider-product__item">
+							<article class="product__item">
+								<a href="#product-dialog" class="popup-with-zoom-anim">
+									<div class="product__img">
+										<img src="img/product/product-2.jfif" alt="">
+									</div>
+									<div class="product__desc">
+										<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+										<div class="product__description d-none">Комбинезон из мягкого стираного денима из Tencel™-лиоцелла.
+											Треугольный вырез с пришитым запахом на потайной кнопке спереди. Заниженная линия плеча и короткие
+											рукава. Отрезная талия на закрытой резинке, со съемным поясом. Боковые карманы.</div>
+										<div class="product__quantity d-none"></div>
+										<div class="product__title-price__wrap">
+											<h1 class="product__title"> <a href="#">Комбинезон из лиоцелла</a></h1>
+											<span class="product__price">2499 <span>руб.</span></span>
+										</div>
+										<button class="btn btn_order" data-sb-id-or-vendor-code="2"
+											data-sb-product-name="Комбинезон из лиоцелла" data-sb-product-price="2499"
+											data-sb-product-quantity="1" data-sb-product-img="img/product/product-2.jfif">В корзину</button>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="slider-product__item">
+							<article class="product__item">
+								<a href="#product-dialog" class="popup-with-zoom-anim">
+									<div class="product__img">
+										<img src="img/product/product-3.jfif" alt="">
+									</div>
+									<div class="product__desc">
+										<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+										<div class="product__description d-none">Рубашка из смеси льна и хлопка. Воротничок на потайных
+											пуговицах, классическая застежка и открытый нагрудный карман. Длинные рукава с манжетами на
+											регулируемой застежке. Кокетка со встречной складкой сзади. Скругленный нижний край. Slim fit –
+											современная посадка с узким плечом и выраженной талией, благодаря чему создается приталенный
+											силуэт.</div>
+										<div class="product__quantity d-none"></div>
+										<div class="product__title-price__wrap">
+											<h1 class="product__title"> <a href="#">Рубашка из смеси льна Slim Fit</a></h1>
+											<span class="product__price">1599 <span>руб.</span></span>
+										</div>
+										<button class="btn btn_order" data-sb-id-or-vendor-code="3"
+											data-sb-product-name="Рубашка из смеси льна Slim Fit" data-sb-product-price="1599"
+											data-sb-product-quantity="1" data-sb-product-img="img/product/product-3.jfif">В корзину</button>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="slider-product__item">
+							<article class="product__item">
+								<a href="#product-dialog" class="popup-with-zoom-anim">
+									<div class="product__img">
+										<img src="img/product/product-4.jfif" alt="">
+									</div>
+									<div class="product__desc">
+										<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+										<div class="product__description d-none">Свитшот довольно свободного силуэта из мягкого футера со
+											слегка заниженной линией плеча. Рельефная трикотажная резинка по горловине, низу рукавов и нижнему
+											краю. Мягкая изнанка с начесом.</div>
+										<div class="product__quantity d-none"></div>
+										<div class="product__title-price__wrap">
+											<h1 class="product__title"> <a href="#">Свитшот</a></h1>
+											<span class="product__price">999 <span>руб.</span></span>
+										</div>
+										<button class="btn btn_order" data-sb-id-or-vendor-code="4" data-sb-product-name="Свитшот"
+											data-sb-product-price="999" data-sb-product-quantity="1"
+											data-sb-product-img="img/product/product-4.jfif">В корзину</button>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="slider-product__item">
+							<article class="product__item">
+								<a href="#product-dialog" class="popup-with-zoom-anim">
+									<div class="product__img">
+										<img src="img/product/product-5.jfif" alt="">
+									</div>
+									<div class="product__desc">
+										<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+										<div class="product__description d-none">Короткое платье без рукавов из вискозной ткани. Узкие
+											регулируемые бретели и треугольный вырез с узлом и маленьким разрезом спереди. Слегка расклешенная
+											юбка. Потайная молния сбоку. Без подкладки.</div>
+										<div class="product__quantity d-none"></div>
+										<div class="product__title-price__wrap">
+											<h1 class="product__title"> <a href="#">Платье с узлом</a></h1>
+											<span class="product__price">1199 <span>руб.</span></span>
+										</div>
+										<button class="btn btn_order" data-sb-id-or-vendor-code="5" data-sb-product-name="Платье с узлом"
+											data-sb-product-price="1199" data-sb-product-quantity="1"
+											data-sb-product-img="img/product/product-5.jfif">В корзину</button>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-page category">
+				<div class="container">
+					<div class="section__title">
+						<h2>Категории</h2>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<div class="category__item">
+								<a href="man.html">
+									<div class="category__img">
+										<img src="img/category/category-1.jpg" alt="">
+									</div>
+									<div class="category__name">
+										Мужчины
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="category__item">
+								<a href="woman.html">
+									<div class="category__img">
+										<img src="img/category/category-2.jpg" alt="">
+									</div>
+									<div class="category__name">
+										Женщины
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="category__item">
+								<a href="acsessuary.html">
+									<div class="category__img">
+										<img src="img/category/category-3.jpg" alt="">
+									</div>
+									<div class="category__name">
+										Аксессуары
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="category__item">
+								<a href="galstuki.html">
+									<div class="category__img">
+										<img src="img/category/category-4.jpg" alt="">
+									</div>
+									<div class="category__name">
+										Галстуки
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-page lookbook">
+				<div class="container-fluid">
+					<div class="section__title">
+						<h2>LookBook</h2>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<div class="lookbook__item">
+								<div class="lookbook__img">
+									<img src="img/product/product-6.jfif" alt="">
+								</div>
+								<div class="lookbook__content lookbook__content-1">
+									<div class="hidden__content">
+										<div class="hidden__content__img">
+											<img src="img/product/product-7.jfif" alt="">
+										</div>
+										<a class="hidden__content__name">
+											Майка из рельефного трикотажа
+										</a>
+									</div>
+									<article class="product__item d-none">
+										<a href="#product-dialog" class="popup-with-zoom-anim">
+											<div class="product__img">
+												<img src="img/product/product-7.jfif" alt="">
+											</div>
+											<div class="product__desc">
+												<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+												<div class="product__description d-none"></div>
+												<div class="product__quantity d-none"></div>
+												<div class="product__title-price__wrap">
+													<h1 class="product__title"> <a href="#">Майка из рельефного трикотажа</a></h1>
+													<span class="product__price">699 <span>руб.</span></span>
+												</div>
+												<button class="btn btn_order" data-sb-id-or-vendor-code="7"
+													data-sb-product-name="Майка из рельефного трикотажа" data-sb-product-price="699"
+													data-sb-product-quantity="1" data-sb-product-img="img/product/product-7.jfif">В
+													корзину</button>
+											</div>
+										</a>
+									</article>
+								</div>
+								<div class="lookbook__content lookbook__content-2">
+									<div class="hidden__content">
+										<div class="hidden__content__img">
+											<img src="img/product/product-8.jfif" alt="">
+										</div>
+										<a class="hidden__content__name">
+											Тюлевая юбка
+										</a>
+									</div>
+									<article class="product__item d-none">
+										<a href="#product-dialog" class="popup-with-zoom-anim">
+											<div class="product__img">
+												<img src="img/product/product-8.jfif" alt="">
+											</div>
+											<div class="product__desc">
+												<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+												<div class="product__description d-none">Расклешенная юбка длиной до икры из двух слоев тюля.
+													Высокая талия и потайная молния с одной стороны. На подкладке.</div>
+												<div class="product__quantity d-none"></div>
+												<div class="product__title-price__wrap">
+													<h1 class="product__title"> <a href="#">Тюлевая юбка</a></h1>
+													<span class="product__price">1599 <span>руб.</span></span>
+												</div>
+												<button class="btn btn_order" data-sb-id-or-vendor-code="8" data-sb-product-name="Тюлевая юбка"
+													data-sb-product-price="1599" data-sb-product-quantity="1"
+													data-sb-product-img="img/product/product-8.jfif">В
+													корзину</button>
+											</div>
+										</a>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="lookbook__item">
+								<div class="lookbook__img">
+									<img src="img/product/product-9.jfif" alt="">
+								</div>
+								<div class="lookbook__content lookbook__content-1">
+									<div class="hidden__content">
+										<div class="hidden__content__img">
+											<img src="img/product/product-11.jfif" alt="">
+										</div>
+										<a class="hidden__content__name">
+											Вязаный джемпер
+										</a>
+									</div>
+									<article class="product__item d-none">
+										<a href="#product-dialog" class="popup-with-zoom-anim">
+											<div class="product__img">
+												<img src="img/product/product-11.jfif" alt="">
+											</div>
+											<div class="product__desc">
+												<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+												<div class="product__description d-none">
+													Джемпер объемной вязки из мягкой пряжи с добавлением шерсти. Длинные, довольно широкие рукава.
+													Широкая рельефная обвязка горловины, низа рукавов и нижнего края.
+												</div>
+												<div class="product__quantity d-none"></div>
+												<div class="product__title-price__wrap">
+													<h1 class="product__title"> <a href="#">Вязаный джемпер</a></h1>
+													<span class="product__price">3499 <span>руб.</span></span>
+												</div>
+												<button class="btn btn_order" data-sb-id-or-vendor-code="11"
+													data-sb-product-name="Вязаный джемпер" data-sb-product-price="3499"
+													data-sb-product-quantity="1" data-sb-product-img="img/product/product-11.jfif">В
+													корзину</button>
+											</div>
+										</a>
+									</article>
+								</div>
+								<div class="lookbook__content lookbook__content-3">
+									<div class="hidden__content">
+										<div class="hidden__content__img">
+											<img src="img/product/product-10.jfif" alt="">
+										</div>
+										<a class="hidden__content__name">
+											Плиссированная юбка
+										</a>
+									</div>
+									<article class="product__item d-none">
+										<a href="#product-dialog" class="popup-with-zoom-anim">
+											<div class="product__img">
+												<img src="img/product/product-10.jfif" alt="">
+											</div>
+											<div class="product__desc">
+												<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+												<div class="product__description d-none">Длинная плиссированная юбка из креповой ткани с
+													эффектом драпировки. Высокая талия с потайной молнией и застежкой на крючок с одной стороны.
+													На подкладке.</div>
+												<div class="product__quantity d-none"></div>
+												<div class="product__title-price__wrap">
+													<h1 class="product__title"> <a href="#">Плиссированная юбка</a></h1>
+													<span class="product__price">2999 <span>руб.</span></span>
+												</div>
+												<button class="btn btn_order" data-sb-id-or-vendor-code="10"
+													data-sb-product-name="Плиссированная юбка" data-sb-product-price="2999"
+													data-sb-product-quantity="1" data-sb-product-img="img/product/product-10.jfif">В
+													корзину</button>
+											</div>
+										</a>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="lookbook__item">
+								<div class="lookbook__img">
+									<img src="img/product/product-12.jfif" alt="">
+								</div>
+								<div class="lookbook__content lookbook__content-4">
+									<div class="hidden__content">
+										<div class="hidden__content__img">
+											<img src="img/product/product-13.jfif" alt="">
+										</div>
+										<a class="hidden__content__name">
+											Рубашка Regular Fit
+										</a>
+									</div>
+									<article class="product__item d-none">
+										<a href="#product-dialog" class="popup-with-zoom-anim">
+											<div class="product__img">
+												<img src="img/product/product-13.jfif" alt="">
+											</div>
+											<div class="product__desc">
+												<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+												<div class="product__description d-none">
+													Рубашка из смеси льна и хлопка. Воротник под горло, классическая планка и кокетка сзади.
+													Открытый нагрудный карман. Длинные рукава с манжетами и скругленный нижний край. Regular Fit -
+													классическая посадка, обеспечивающая свободу движений, слегка приталенная. Благодаря этому
+													создается удобный, сидящий по фигуре силуэт.
+												</div>
+												<div class="product__quantity d-none"></div>
+												<div class="product__title-price__wrap">
+													<h1 class="product__title"> <a href="#">Рубашка Regular Fit</a></h1>
+													<span class="product__price">1899 <span>руб.</span></span>
+												</div>
+												<button class="btn btn_order" data-sb-id-or-vendor-code="13"
+													data-sb-product-name="Рубашка Regular Fit" data-sb-product-price="1899"
+													data-sb-product-quantity="1" data-sb-product-img="img/product/product-13.jfif">В
+													корзину</button>
+											</div>
+										</a>
+									</article>
+								</div>
+								<div class="lookbook__content lookbook__content-5">
+									<div class="hidden__content">
+										<div class="hidden__content__img">
+											<img src="img/product/product-14.jfif" alt="">
+										</div>
+										<a class="hidden__content__name">
+											Костюмные брюки Skinny Fit
+										</a>
+									</div>
+									<article class="product__item d-none">
+										<a href="#product-dialog" class="popup-with-zoom-anim">
+											<div class="product__img">
+												<img src="img/product/product-14.jfif" alt="">
+											</div>
+											<div class="product__desc">
+												<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+												<div class="product__description d-none">Костюмные брюки из воздушной ткани из смеси льна и
+													хлопка. Скошенные боковые карманы и прорезные карманы на пуговице сзади. Резинка сзади на
+													талии, а также застежка на молнию и пуговицу. Пришитые отвороты снизу. Skinny Fit –
+													укороченные брючины, облегающие в бедрах, коленях и лодыжках. Благодаря этому создается узкий
+													силуэт по всей длине.</div>
+												<div class="product__quantity d-none"></div>
+												<div class="product__title-price__wrap">
+													<h1 class="product__title"> <a href="#">Костюмные брюки Skinny Fit</a></h1>
+													<span class="product__price">2299 <span>руб.</span></span>
+												</div>
+												<button class="btn btn_order" data-sb-id-or-vendor-code="14"
+													data-sb-product-name="Костюмные брюки Skinny Fit" data-sb-product-price="2299"
+													data-sb-product-quantity="1" data-sb-product-img="img/product/product-14.jfif">В
+													корзину</button>
+											</div>
+										</a>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-page featured" id="featured_new">
+				<div class="container">
+					<div class="section__title">
+						<h2>Последние поступления</h2>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<article class="product__item">
+								<a href="#product-dialog" class="popup-with-zoom-anim">
+									<div class="product__img">
+										<img src="img/product/product-15.jfif" alt="">
+									</div>
+									<div class="product__desc">
+										<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+										<div class="product__description d-none">Футболка из мягкого хлопкового трикотажа с принтом.</div>
+										<div class="product__quantity d-none"></div>
+										<div class="product__title-price__wrap">
+											<h1 class="product__title"> <a href="#">Футболка с принтом</a></h1>
+											<span class="product__price">1199 <span>руб.</span></span>
+										</div>
+										<button class="btn btn_order" data-sb-id-or-vendor-code="15"
+											data-sb-product-name="Футболка с принтом" data-sb-product-price="1199"
+											data-sb-product-quantity="1" data-sb-product-img="img/product/product-15.jfif">В корзину</button>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-3">
+							<article class="product__item">
+								<a href="#product-dialog" class="popup-with-zoom-anim">
+									<div class="product__img">
+										<img src="img/product/product-16.jfif" alt="">
+									</div>
+									<div class="product__desc">
+										<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+										<div class="product__description d-none">Рубашка с коротким рукавом из вискозной ткани с набивным
+											рисунком. Распашной воротник и французская планка. Relaxed Fit - прямой непринужденный фасон, не
+											стесняющий движений. Благодаря этому создается комфортный и свободный силуэт.</div>
+										<div class="product__quantity d-none"></div>
+										<div class="product__title-price__wrap">
+											<h1 class="product__title"> <a href="#">Рубашка с рисунком</a></h1>
+											<span class="product__price">799 <span>руб.</span></span>
+										</div>
+										<button class="btn btn_order" data-sb-id-or-vendor-code="16"
+											data-sb-product-name="Рубашка с рисунком" data-sb-product-price="799" data-sb-product-quantity="1"
+											data-sb-product-img="img/product/product-16.jfif">В корзину</button>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-3">
+							<article class="product__item">
+								<a href="#product-dialog" class="popup-with-zoom-anim">
+									<div class="product__img">
+										<img src="img/product/product-17.jfif" alt="">
+									</div>
+									<div class="product__desc">
+										<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+										<div class="product__description d-none">Длинная рубашка из хлопковой ткани с добавлением льна.
+											Воротник и потайная застежка спереди, а также складка на спине и горизонтальный шов спереди и
+											сзади. Открытые нагрудные карманы, сильно заниженная линия плеча и длинные рукава с манжетами на
+											застежке. Скругленный нижний край, спинка удлинена.</div>
+										<div class="product__quantity d-none"></div>
+										<div class="product__title-price__wrap">
+											<h1 class="product__title"> <a href="#">Рубашка из смесового льна</a></h1>
+											<span class="product__price">2299 <span>руб.</span></span>
+										</div>
+										<button class="btn btn_order" data-sb-id-or-vendor-code="17"
+											data-sb-product-name="Рубашка из смесового льна" data-sb-product-price="2299"
+											data-sb-product-quantity="1" data-sb-product-img="img/product/product-17.jfif">В корзину</button>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-3">
+							<article class="product__item">
+								<a href="#product-dialog" class="popup-with-zoom-anim">
+									<div class="product__img">
+										<img src="img/product/product-18.jfif" alt="">
+									</div>
+									<div class="product__desc">
+										<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+										<div class="product__description d-none">Футболка из мягкого хлопкового трикотажа с принтом.</div>
+										<div class="product__quantity d-none"></div>
+										<div class="product__title-price__wrap">
+											<h1 class="product__title"> <a href="#">Футболка с принтом</a></h1>
+											<span class="product__price">799 <span>руб.</span></span>
+										</div>
+										<button class="btn btn_order" data-sb-id-or-vendor-code="18"
+											data-sb-product-name="Футболка с принтом" data-sb-product-price="799" data-sb-product-quantity="1"
+											data-sb-product-img="img/product/product-18.jfif">В корзину</button>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-3">
+							<article class="product__item">
+								<a href="#product-dialog" class="popup-with-zoom-anim">
+									<div class="product__img">
+										<img src="img/product/product-19.jfif" alt="">
+									</div>
+									<div class="product__desc">
+										<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+										<div class="product__description d-none">Костюмные брюки из воздушной ткани из смеси льна и хлопка.
+											Скошенные боковые карманы и прорезные карманы на пуговице сзади. Резинка сзади на талии, а также
+											застежка на молнию и пуговицу. Пришитые отвороты снизу. Skinny Fit – укороченные брючины,
+											облегающие в бедрах, коленях и лодыжках. Благодаря этому создается узкий силуэт по всей длине.
+										</div>
+										<div class="product__quantity d-none"></div>
+										<div class="product__title-price__wrap">
+											<h1 class="product__title"> <a href="#">Костюмные брюки Skinny Fit</a></h1>
+											<span class="product__price">2299 <span>руб.</span></span>
+										</div>
+										<button class="btn btn_order" data-sb-id-or-vendor-code="19"
+											data-sb-product-name="Костюмные брюки Skinny Fit" data-sb-product-price="2299"
+											data-sb-product-quantity="1" data-sb-product-img="img/product/product-19.jfif">В корзину</button>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-3">
+							<article class="product__item">
+								<a href="#product-dialog" class="popup-with-zoom-anim">
+									<div class="product__img">
+										<img src="img/product/product-20.jfif" alt="">
+									</div>
+									<div class="product__desc">
+										<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+										<div class="product__description d-none">Платье длиной до икр из воздушной хлопковой ткани с
+											набивным рисунком. Свободный силуэт, сборка по горловине и треугольный вырез сверху с узкими
+											завязками. Сильно заниженная линия плеча и длинные пышные рукава реглан с узкой закрытой резинкой
+											снизу. Присборенная резинка на бедрах и коленях для создания объема. Без подкладки.
+										</div>
+										<div class="product__quantity d-none"></div>
+										<div class="product__title-price__wrap">
+											<h1 class="product__title"> <a href="#">Хлопковое платье</a></h1>
+											<span class="product__price">2499 <span>руб.</span></span>
+										</div>
+										<button class="btn btn_order" data-sb-id-or-vendor-code="20" data-sb-product-name="Хлопковое платье"
+											data-sb-product-price="2499" data-sb-product-quantity="1"
+											data-sb-product-img="img/product/product-20.jfif">В корзину</button>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-3">
+							<article class="product__item">
+								<a href="#product-dialog" class="popup-with-zoom-anim">
+									<div class="product__img">
+										<img src="img/product/product-21.jfif" alt="">
+									</div>
+									<div class="product__desc">
+										<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+										<div class="product__description d-none">DESMOND & DEMPSEY x H&M. Футболка из мягкого органического
+											хлопка с принтом. Прямой крой и свободный силуэт.
+										</div>
+										<div class="product__quantity d-none"></div>
+										<div class="product__title-price__wrap">
+											<h1 class="product__title"> <a href="#">Хлопковая футболка</a></h1>
+											<span class="product__price">799 <span>руб.</span></span>
+										</div>
+										<button class="btn btn_order" data-sb-id-or-vendor-code="21"
+											data-sb-product-name="Хлопковая футболка" data-sb-product-price="799" data-sb-product-quantity="1"
+											data-sb-product-img="img/product/product-21.jfif">В корзину</button>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-3">
+							<article class="product__item">
+								<a href="#product-dialog" class="popup-with-zoom-anim">
+									<div class="product__img">
+										<img src="img/product/product-22.jfif" alt="">
+									</div>
+									<div class="product__desc">
+										<a href="#product-dialog" class="btn btn_quick popup-with-zoom-anim">Посмотреть</a>
+										<div class="product__description d-none">Юбка клеш длиной до икр из вискозной ткани с набивным
+											рисунком. Высокая талия с потайной молнией сбоку. Высокие разрезы по бокам. Без подкладки.
+										</div>
+										<div class="product__quantity d-none"></div>
+										<div class="product__title-price__wrap">
+											<h1 class="product__title"> <a href="#">Расклешенная юбка</a></h1>
+											<span class="product__price">1599 <span>руб.</span></span>
+										</div>
+										<button class="btn btn_order" data-sb-id-or-vendor-code="22"
+											data-sb-product-name="Расклешенная юбка" data-sb-product-price="1599" data-sb-product-quantity="1"
+											data-sb-product-img="img/product/product-22.jfif">В корзину</button>
 									</div>
 								</a>
 							</article>
@@ -294,27 +871,159 @@
 				</div>
 			</section>
 		</main>
+	</div>
+	<section class="section-page instagram">
+		<div class="container-fluid p-0">
+			<div class="row no-gutters">
+				<div class="col-2">
+					<a href="https://www.instagram.com/p/BrkoAhUHYJc/">
+						<div class="instagram__img">
+							<img src="img/instagram/insta-1.jpg" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="https://www.instagram.com/p/Brkn_KEnfVn/">
+						<div class="instagram__img">
+							<img src="img/instagram/insta-2.jpg" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="https://www.instagram.com/p/Brkn8q2navN/">
+						<div class="instagram__img">
+							<img src="img/instagram/insta-3.jpg" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="https://www.instagram.com/p/Brkn7MJHGnt/">
+						<div class="instagram__img">
+							<img src="img/instagram/insta-4.jpg" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="https://www.instagram.com/p/BrknzYtnbG0/">
+						<div class="instagram__img">
+							<img src="img/instagram/insta-5.jpg" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="https://www.instagram.com/p/BrknnQanf0Q/">
+						<div class="instagram__img">
+							<img src="img/instagram/insta-6.jpg" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-page info">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="info__item">
+						<div class="info__item__inner">
+							<div class="info__item__title">ИП Сапрагин</div>
+							<p>г. Краснодар, ул.Вишняковой, 144 </p>
+							<span class="hr"></span>
+							<p class="bold">Время работы</p>
+							<p>Понедельник - Пятница: 9:00 - 18:00</p>
+							<p>Суббота - Воскресение: 10:00 - 17:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<div class="footer__item">
+						<div class="logo">
+							<img src="img/logo.png" alt="">
+						</div>
+						<ul class="address">
+							<li><i class="fa fa-map-pin" aria-hidden="true"></i> г. Краснодар, ул.Вишняковой, 144</li>
+							<li><i class="fa fa-phone" aria-hidden="true"></i> +7 861 222 44 55</li>
+							<li><i class="fa fa-envelope-o" aria-hidden="true"></i> mail@mail.ru</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="footer__item">
+						<h2>Навигация</h2>
+						<ul class="menu-bottom">
+							<li class="menu-bottom__item"><a href="index.html" class="active">Главная</a></li>
+							<li class="menu-bottom__item"><a href="sale.html">Скидки</a></li>
+							<li class="menu-bottom__item"><a href="about.html">О нас</a></li>
+							<li class="menu-bottom__item"><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="footer__item">
+						<h2>Категории</h2>
+						<ul class="menu-bottom">
+							<li class="menu-bottom__item"><a href="woman.html">Женщины</a></li>
+							<li class="menu-bottom__item"><a href="man.html">Мужчины</a></li>
+							<li class="menu-bottom__item"><a href="acsessuary.html">Аксессуары</a></li>
+							<li class="menu-bottom__item"><a href="galstuki.html">Галстуки</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="footer__item">
+						<div class="map">
+							<script type="text/javascript" charset="utf-8" async
+								src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afe15c5ef5df186185dbbeb62a7ab8a15ebdd65a250e8f5318d1a920fc7155bb0&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<p>© 2020 ИП Сапрыгин. Все права защищены</p>
+			</div>
+		</div>
 	</div>
 
 	<div id="product-dialog" class="zoom-anim-dialog mfp-hide">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-12">
+				<div class="col-lg-6 col-md-6 col-12 fix-padding-left">
 					<figure>
-						<img src="img/product1.png" alt="" id="product-img">
+						<img src="img/logo.png" alt="" id="product-img">
 					</figure>
 				</div>
 				<div class="col-lg-6 col-md-6 col-12">
-					<div class="product-dialog-description d-flex flex-column justify-content-center h-100">
+					<div class="product-dialog-description d-flex flex-column justify-content-center h-100 product__item">
 						<h2 id="product-name">Имя товаа</h2>
 						<p id="product-description">Описание товара</p>
+						<h3>Размер</h3>
+						<div class="size">
+							<div class="size__item active" data-sb-curent-price="2299" data-sb-curent-size="S"
+								data-sb-curent-id-or-vendor-code="p1">S</div>
+							<div class="size__item" data-sb-curent-price="2299" data-sb-curent-size="M"
+								data-sb-curent-id-or-vendor-code="p1">M</div>
+							<div class="size__item" data-sb-curent-price="2299" data-sb-curent-size="L"
+								data-sb-curent-id-or-vendor-code="p1">L</div>
+						</div>
 						<div class="product-price-quality d-flex align-items-center">
-							<span id="product-form-price" class="price">100</span><span class="rub"> <i class="fa fa-rub"
-									aria-hidden="true"></i></span>
+							<div class="product__quantity d-none"></div>
+							<span id="product-form-price" class="product__price">100</span>
+							<span class="rub"> руб.</span>
 						</div>
 						<div class="wrap-btn">
-							<button class="btn popup-order" href="#order-form">В корзину</button>
+							<button class="btn btn_order btn_form_order" data-sb-id-or-vendor-code="" data-sb-product-name=""
+								data-sb-product-price="" data-sb-product-quantity="" data-sb-product-img="">В корзину</button>
 						</div>
 					</div>
 				</div>
@@ -325,6 +1034,7 @@
 	<script src="js/scripts.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="smartbasket/js/smartbasket.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
 
