@@ -27,6 +27,8 @@ body
 		top: 0
 		bottom: 0
 		background-color: #e9e9e9
+		+media-breakpoint-down(lg)
+			max-width: 50px
 	&:before
 		left: 0
 	&:after
@@ -89,6 +91,8 @@ header
 
 .body__inner
 	margin: 0 100px
+	+media-breakpoint-down(lg)
+		margin: 0 50px
 
 .banner
 	padding: 15px 0
@@ -254,6 +258,8 @@ header
 	padding: 50px 0
 	.col
 		width: 10%
+		+media-breakpoint-down(lg)
+			width: 20%
 	&__img
 		opacity: .5
 		transition: .3s
@@ -344,6 +350,8 @@ header
 .slick-dots
 	position: absolute
 	bottom: 50px
+	+media-breakpoint-down(md)
+		bottom: 15px
 	li
 		width: 15px
 		height: 15px
@@ -582,8 +590,12 @@ header
 
 .category
 	padding: 100px 0
+	+media-breakpoint-down(md)
+		padding: 60px 0
 	&__item
 		position: relative
+		+media-breakpoint-down(md)
+			margin-bottom: 15px
 		&:hover .category__img:after
 			opacity: .3
 		&:hover img
@@ -614,8 +626,12 @@ header
 
 .lookbook
 	padding: 80px 15px
+	+media-breakpoint-down(md)
+		padding: 60px 15px 0
 	&__item
 		position: relative
+		+media-breakpoint-down(md)
+			margin-bottom: 15px
 	&__img
 		overflow: hidden
 		img
