@@ -1,16 +1,16 @@
 $(document).ready(function () {
 
-$(".menu_btn").click(function (e) { 
-  e.preventDefault();
-  $("nav").addClass("open");
-  $(".close-mobile-menu").addClass("open")
-});
+  $(".menu_btn").click(function (e) {
+    e.preventDefault();
+    $("nav").addClass("open");
+    $(".close-mobile-menu").addClass("open")
+  });
 
-$(".close-mobile-menu").click(function (e) { 
-  e.preventDefault();
-  $("nav").removeClass("open");
-  $(this).removeClass("open");
-});
+  $(".close-mobile-menu").click(function (e) {
+    e.preventDefault();
+    $("nav").removeClass("open");
+    $(this).removeClass("open");
+  });
 
   $('.smart-basket__wrapper').smbasket({
     productElement: 'product__item',
@@ -36,6 +36,12 @@ $(".close-mobile-menu").click(function (e) {
     $(this).closest(".lookbook__content").find("a[href='#product-dialog']").trigger("click")
   });
 
+  $(".btn_order").click(function (e) {
+    e.preventDefault();
+    $("#product-dialog .size__item:nth-child(1)").attr("data-sb-curent-id-or-vendor-code", $(this).closest(".product__item").find(".btn_order").data("sb-id-or-vendor-code") + "-1");
+    $("#product-dialog .size__item:nth-child(2)").attr("data-sb-curent-id-or-vendor-code", +$(this).closest(".product__item").find(".btn_order").data("sb-id-or-vendor-code") + "-2");
+    $("#product-dialog .size__item:nth-child(3)").attr("data-sb-curent-id-or-vendor-code", +$(this).closest(".product__item").find(".btn_order").data("sb-id-or-vendor-code") + "-3");
+  });
 
   $("a[href='#product-dialog']").click(function () {
     price = +$(this).closest(".product__item").find(".btn_order").data("sb-product-price");
@@ -43,12 +49,16 @@ $(".close-mobile-menu").click(function (e) {
     $("#product-img").attr("src", $(this).closest(".product__item").find("img").attr("src"));
     $("#product-name").text($(this).closest(".product__item").find(".product__title").text());
     $("#product-description").text($(this).closest(".product__item").find(".product__description").text())
+    $(".btn_form_order").attr("data-sb-product-size", "S");
     $(".btn_form_order").attr("data-sb-product-price", +price);
     $(".btn_form_order").attr("data-sb-product-quantity", +price);
-    $(".btn_form_order").attr("data-sb-id-or-vendor-code", $(this).closest(".product__item").find(".btn_order").data("sb-id-or-vendor-code"))
+    $(".btn_form_order").attr("data-sb-id-or-vendor-code", $(this).closest(".product__item").find(".btn_order").data("sb-id-or-vendor-code") + "-1")
     $(".btn_form_order").attr("data-sb-product-name", $(this).closest(".product__item").find(".product__title").text());
     $(".btn_form_order").attr("data-sb-product-img", $(this).closest(".product__item").find("img").attr("src"));
     $("#product-dialog .size__item").attr("data-sb-curent-price", +price);
+    $("#product-dialog .size__item:nth-child(1)").attr("data-sb-curent-id-or-vendor-code", $(this).closest(".product__item").find(".btn_order").data("sb-id-or-vendor-code") + "-1");
+    $("#product-dialog .size__item:nth-child(2)").attr("data-sb-curent-id-or-vendor-code", +$(this).closest(".product__item").find(".btn_order").data("sb-id-or-vendor-code") + "-2");
+    $("#product-dialog .size__item:nth-child(3)").attr("data-sb-curent-id-or-vendor-code", +$(this).closest(".product__item").find(".btn_order").data("sb-id-or-vendor-code") + "-3");
   });
   $('.banner-slider').slick({
     dots: true,
@@ -144,6 +154,7 @@ $('a[href*="#"]')
   /* Убираем ненужные, либо те которые нужны для других целей, например для галерей, так что сюда можешь добавить список хешей на который плавный скролл не будет реагировать */
   .not('[href="#"]')
   .not('[href="#0"]')
+  .not('[href^="#p"]')
   .click(function (event) {
     // Проверяем что все хеши на том домене
     if (
@@ -174,4 +185,40 @@ $('a[href*="#"]')
         });
       }
     }
+  });
+
+  function AjaxFormRequest(result_id, formMain, url) {
+    jQuery.ajax({
+      url: url,
+      type: "POST",
+      dataType: "html",
+      data: jQuery("#" + formMain).serialize(),
+      success: function (response) {
+        $(':input', '#' + formMain)
+          .not(':button, :submit, :reset, :hidden')
+          .val('')
+          .removeAttr('checked')
+          .removeAttr('selected');
+        setTimeout(() => {
+          $("#message").hide();
+        }, 5000);
+      },
+      error: function (response) {
+        var par = document.getElementById(result_id);
+        var error = document.createElement('p');
+        error.classList.add("mt-3","error");
+        error.innerHTML = "Возникла ошибка при отправке формы.";
+        par.appendChild(error);
+        setTimeout(func, 700);
+      }
+    });
+  }
+  
+  function func() {
+    $("p.mt-3").detach();
+  }
+
+  $('#contacts-form').submit(function (e) {
+    e.preventDefault();
+    AjaxFormRequest('errorSvyaz', 'contacts-form', '../svyaz.php');
   });

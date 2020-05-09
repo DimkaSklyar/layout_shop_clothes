@@ -52,6 +52,7 @@ body
 	visibility: hidden
 	opacity: 0
 	transition: .3s
+	white-space: nowrap
 	+media-breakpoint-down(sm)
 		position: static
 		opacity: 1
@@ -489,7 +490,8 @@ nav
 
 .btn_quick,
 .btn_order,
-.smart-basket__close-form
+.smart-basket__close-form,
+.smart-basket__alert-button_close
 	display: inline-block
 	text-transform: uppercase
 	color: #000
@@ -518,7 +520,8 @@ nav
 	bottom: -50px
 	color: #fff
 .btn_form_order,
-.smart-basket__close-form
+.smart-basket__close-form,
+.smart-basket__alert-button_close
 	position: static
 	opacity: 1
 .smart-basket__close-form
@@ -527,9 +530,19 @@ nav
 	padding: 15px 30px
 	width: auto
 	background-color: #e97e3d
+.smart-basket__alert-button_close
+	width: auto
+	background-color: #e97e3d
+	color: #fff
+	&:hover
+		background-color: darken(#e97e3d, 5%)
 
 .size__item
-	
+.smart-basket__product-item
+	padding: 5px 0
+.smart-basket__delete-icon
+	color: #e97e3d
+	font-size: 50px
 
 #product-dialog
   text-align: left
@@ -636,7 +649,8 @@ nav
 	background-color: #fff
 .smart-basket
 	background-color: rgba(#000,.8)
-.smart-basket__send-form
+.smart-basket__send-form,
+.smart-basket__alert-button_by
 	background-color: #000
 	text-transform: uppercase
 	font-weight: bold
@@ -663,7 +677,9 @@ nav
 	background-color: #FFF
 	border: 1px solid #e6e6e6
 	border-radius: 0
-
+.smart-basket__alert-button_by
+	&:hover
+		background-color: lighten(#000, 20%)
 .section__title
 	h2
 		text-align: center
@@ -1161,6 +1177,67 @@ nav
 	p
 		font-size: 14px
 		margin-top: 15px
+	
+.show-count
+	text-align: right
+.filter-sort
+	display: flex
+	justify-content: space-between
+	margin-bottom: 20px
+select
+	font-size: 14px
+	padding: 4px 10px
+	background-color: #FFF
+	border: 1px solid #e6e6e6
+	border-radius: 0
+	padding-right: 15px
+.filter__button
+	button
+		border: none
+		background-color: #000
+		color: #ffffff
+		letter-spacing: 1px
+		padding: 10px 30px
+		font-size: 14px
+		cursor: pointer
+		margin-bottom: 10px
+		display: block
+		width: 80%
+		+media-breakpoint-down(lg)
+			font-size: 14
+		+media-breakpoint-down(md)
+			padding: 10px 30px
+			display: inline-block
+			width: auto
+		&.mixitup-control-active
+			background-color: #e97e3d
+.radio-group
+	margin-bottom: 30px
+.mixitup-page-list
+	button
+		border: 0
+		background: #e97e3d
+		outline: 0 none
+		cursor: pointer
+		width: 40px
+		height: 40px
+		border-radius: 5px
+		color: #fff
+		&.mixitup-control-disabled
+			background: lighten(#e97e3d, 20%)
+
+.sale
+	position: relative
+	&:before
+		position: absolute
+		content: "Скидка"
+		background-color: #e97e3d
+		color: #fff
+		padding: 3px 10px
+	.old-price
+		text-decoration: line-through
+		color: #ccc
+		font-weight: bold
 /*==========  user style  ==========*/
 
 +keyframes(animation-1)
